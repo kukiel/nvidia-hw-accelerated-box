@@ -54,9 +54,8 @@ Section "Device"
     Identifier     "Device0"
     Driver         "nvidia"
     VendorName     "NVIDIA Corporation"
-    BusID          "PCI:0:3:0" # THIS MAY CHANGE FROM INSTANCE TO INSTANCE,
-    						   # check the device bus by running 'lspci | grep -i nvidia'
-    						   # or lshw -C video
+    BoardName      "Tesla K80"
+    BusID          "PCI:0:30:0"
 EndSection
 
 Section "Screen"
@@ -64,8 +63,9 @@ Section "Screen"
     Device         "Device0"
     Monitor        "Monitor0"
     DefaultDepth    24
-    Option         "AllowEmptyInitialConfiguration" "True" # set by the --allow-empty-initial-configuration flag
+    Option         "UseDisplayDevice" "None"
     SubSection     "Display"
+        Virtual     1024 768
         Depth       24
     EndSubSection
 EndSection
