@@ -22,5 +22,5 @@ echo "cleaning setup files"
 rm ./*setup.sh
 rm ./*.md
 
-echo "setup complete... rebooting now"
-reboot now
+# echo "setup complete... rebooting now"
+# reboot now
