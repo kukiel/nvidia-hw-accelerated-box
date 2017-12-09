@@ -1,8 +1,8 @@
 # Before you start
-This is intended to be a **demo** setup to run hardware accelerated content on AWS G2 instances https://aws.amazon.com/ec2/instance-types/#g2
+This is intended to be a **demo** setup to run hardware accelerated content on AWS P2 instances https://aws.amazon.com/ec2/instance-types/#g2
 
 # Requirements
-These scripts must be run on a G2 EC2 box running Ubuntu 16.04 (HVM).
+These scripts must be run on a P2 EC2 box running Ubuntu 16.04 (HVM).
 
 # What is included?
 Among the other packages these scripts will install
